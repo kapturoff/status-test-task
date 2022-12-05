@@ -6,7 +6,8 @@ const findAllChildren = cache((items: TreeItem[], id: TreeItem["id"]) => {
 
     /**
      * Perfomance tip: the for cycle without "of" statement is the fastest way
-     * to go through massive (faster than "for (const item of array) {}" and array.map(item => {}))
+     * to go through array. It's faster than "for (const item of array) {}" 
+     * and array.map(item => {})
      */
 
     for (let i = 0; i < items.length; i++) {
